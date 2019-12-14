@@ -25,13 +25,11 @@ sim_t =int(sys.argv[4])												#Simulation time in nano-seconds
 
 topology = md.load(ref_structure).topology
 trajectory = md.load(traj, top=ref_structure)
-frames=trajectory.n_frames												#Number of frames
-chains=topology.n_chains												#Number of chains
-atoms=int(topology.n_atoms/chains)										#Number of atoms in each monomer 
-AminoAcids = int(topology.n_residues/chains)-2							#Number of residues per chain ('-2' avoid the N- and C- cap residues as individual residues)
+frames=trajectory.n_frames											#Number of frames
+chains=topology.n_chains											#Number of chains
+atoms=int(topology.n_atoms/chains)									#Number of atoms in each monomer 
+AminoAcids = int(topology.n_residues/chains)-2						#Number of residues per chain ('-2' avoid the N- and C- cap residues as individual residues)
 adj=frames/sim_t													#Snaphots saved every "adj" ns
-print(adj)
-
 
 
 for i in range(len(inp)):
@@ -39,12 +37,12 @@ for i in range(len(inp)):
     plt.plot(data[:,0]/adj, data[:,1], linewidth=2, linestyle='-', color = '#ff0e15')
 
 lty=np.arange(0.5,chains+2,1)
-ltx=np.arange(0,(frames/adj)+100,250)
+ltx=np.arange(0,(frames/adj)+(sim_t/10),(sim_t/4))
 
 ticks_y = range(0,len(lty),1)
-ticks_x = np.arange(0,(frames/adj)+100,250)
+ticks_x = np.arange(0,(frames/adj)+(sim_t/10),(sim_t/4))
 plt.yticks(list(ticks_y), labels=np.arange(chains+2))
-plt.xticks(list(ticks_x), labels=np.arange(0,(frames/adj)+100,250))
+plt.xticks(list(ticks_x), labels=np.arange(0,(frames/adj)+(sim_t/10),(sim_t/4)))
 
 pyplot.ylabel('Oligomerization state')
 pyplot.xlabel('Time(ns)')
