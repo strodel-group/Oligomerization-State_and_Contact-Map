@@ -16,7 +16,7 @@ Output files:  oligomer-groups.dat        - protein chains involved in aggregate
                oligomer-states.dat        - Number of chains involved in aggregated state (quantitative value)\
                oligo-highest-size.dat     - Highest Oligomer size (maximum = number of protein chains)\
              **contact-map.dat**          - Average over the frequency of inter-residue contacts between protein chains\
-             **oligo-block-average.dat**  - Moving average to smooth out fluctuations over simulation time dependent observables\
+             **oligo-block-average.dat**  - Moving average to smooth out fluctuations over simulation time dependent observables
 
 # Plotting the Inter-residue Contact Map:
 
