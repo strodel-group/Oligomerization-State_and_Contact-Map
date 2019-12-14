@@ -200,11 +200,5 @@ for t,b in enumerate(size_data_m):
     	fileout4.write("{} {} {}\n".format(t, '\t', b))
 fileout4.close()
 
-# Plot contact map 
-os.system("python plot-cmap.py")
-# Plot Oligomerisation state
-os.system("python plot-oligostate.py")
-
-
 
 
