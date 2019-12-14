@@ -25,10 +25,10 @@ Min_Distance=int(sys.argv[3])
 
 topology = md.load(ref_structure).topology
 trajectory = md.load(traj, top=ref_structure)
-frames=trajectory.n_frames								#Number of frames
-chains=topology.n_chains								#Number of chains
-atoms=int(topology.n_atoms/chains)						#Number of atoms in each monomer 
-AminoAcids = int(topology.n_residues/chains)-2			#Number of residues per chain ('-2' avoid the N- and C- cap residues as individual residues)
+frames=trajectory.n_frames				#Number of frames
+chains=topology.n_chains				#Number of chains
+atoms=int(topology.n_atoms/chains)			#Number of atoms in each monomer 
+AminoAcids = int(topology.n_residues/chains)-2		#Number of residues per chain ('-2' avoid the N- and C- cap residues as individual residues)
 
 isum=1
 atoms_list=[]
@@ -191,7 +191,7 @@ fileout3.close()
 
 
 size_data = np.loadtxt('oligomer-states.dat')
-window = 25                                            # specify over how many frames the running average is to be calculated
+window = 25                                         	# specify over how many frames the running average is to be calculated
 weights = np.repeat(1.0,window)/window
 size_data_m = np.convolve(size_data[:,1],weights,'valid')
 
