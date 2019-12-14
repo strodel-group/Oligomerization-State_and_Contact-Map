@@ -31,4 +31,4 @@ Usage: python plot-oligostate.py <.pdb file> <.xtc file>  **oligo-highest-size.d
 Output files: Oligomerisation-state.pdf   - Image file indicating evolution of aggregation kinetics over time
   
   
-Note: **<filename.dat>**  files are output files.
+# Note: **<filename.dat>**  files are output files.
