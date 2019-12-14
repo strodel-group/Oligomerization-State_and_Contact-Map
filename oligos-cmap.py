@@ -67,7 +67,7 @@ for m in range(0,chains):
 fileout1 =  open('oligomer-groups.dat','w')
 fileout2 =  open('oligomer-states.dat','w')
 
-for tt in uni.trajectory:
+for tt in uni.trajectory[1:]:
     fileout1.write (str(tt.frame) + '\t')
     fileout2.write (str(tt.frame) + '\t')
     
@@ -133,7 +133,7 @@ for m in range(0,chains):
 
 
 count = 0
-for n,t in enumerate(uni.trajectory):
+for n,t in enumerate(uni.trajectory[1:]):
     on = 0
     Groups = []
     for i in OligoStates[n]:
