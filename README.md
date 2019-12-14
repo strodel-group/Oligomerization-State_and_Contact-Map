@@ -2,9 +2,9 @@
 
 
 Following dependencies need to be fulfilled to run the codes.\
-  1)Python 2.7 or 3.6 (From Anaconda distribution)\
-  2)MDanalysis        (conda install -c conda-forge mdanalysis)\
-  3)MDtraj            (conda install -c omnia mdtraj)
+  1)Python 2.7 or 3.6 (`From Anaconda distribution`)\
+  2)MDanalysis        (`conda install -c conda-forge mdanalysis`)\
+  3)MDtraj            (`conda install -c omnia mdtraj`)
 
 # Calculation of intermolecular residue-residue contact map and oligomer state among the protein chains
 The oligos-cmap.py code calculates the highest oligomer state formed by protein chains in the system within a specfic cutoff distance. It indicates the time (in the form of snaphots from simulation trajectory) at which dissociation or association of protein chains occurs and also identifies the protein chains involved in aggregated state.\
@@ -16,7 +16,7 @@ Output files:  oligomer-groups.dat        - protein chains involved in aggregate
                oligomer-states.dat        - Number of chains involved in aggregated state (quantitative value)\
              **oligo-highest-size.dat**   - Highest Oligomer size (maximum = number of protein chains)\
              **contact-map.dat**          - Average over the frequency of inter-residue contacts between protein chains\
-               oligo-block-average.dat      - Moving average to smooth out fluctuations over simulation time dependent observables
+               oligo-block-average.dat    - Moving average to smooth out fluctuations over simulation time dependent observables
 
 # Plotting the Inter-residue Contact Map:
 
@@ -34,10 +34,11 @@ Output files: Oligomerisation-state.pdf   - Image file indicating evolution of a
 # Note: **<filename.dat>**  files are output files.
 -----------------------------------------------------# Examples #-----------------------------------------------------\
 Walkthrough the codes using the sample structure and trajectory files in example.zip\
-Usage:\n 
+Usage:```
 python oligos-cmap.py protein_ref.pdb  protein_md.xtc 4\
 python plot-cmap.py protein_ref.pdb  protein_md.xtc contact-map.dat\
 python plot-oligostate.py protein_ref.pdb  protein_md.xtc oligo-highest-size.dat 1000
+```
             
             
             
