@@ -32,3 +32,12 @@ Output files: Oligomerisation-state.pdf   - Image file indicating evolution of a
   
   
 # Note: **<filename.dat>**  files are output files.
+-----------------------------------------------------# Examples #-------------------------------------------------------------
+Walkthrough the codes using the sample structure and trajectory files in example.zip
+e.g. Usage: python oligos-cmap.py protein_ref.pdb  protein_md.xtc 4
+            python plot-cmap.py protein_ref.pdb  protein_md.xtc contact-map.dat
+            python plot-oligostate.py protein_ref.pdb  protein_md.xtc oligo-highest-size.dat 1000
+            
+            
+            
+
