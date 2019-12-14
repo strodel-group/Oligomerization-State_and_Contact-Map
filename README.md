@@ -15,7 +15,7 @@ Usage: python oligos-cmap.py <.pdb file> <.xtc file> <distance in nm>
 Output files:  oligomer-groups.dat        - protein chains involved in aggregated state\
                oligomer-states.dat        - Number of chains involved in aggregated state (quantitative value)\
                oligo-highest-size.dat     - Highest Oligomer size (maximum = number of protein chains)\\ 
-             **oligo-block-average.dat**  - Moving average over simulation time dependent data to smooth out fluctuations\
+             **oligo-block-average.dat**  - Moving average to smooth out fluctuations over simulation time dependent observables\
              **contact-map.dat**          - Average over the frequency of inter-residue contacts between protein chains\
 
 # Plotting the Inter-residue Contact Map:
