@@ -12,10 +12,10 @@ Copy/Download the codes to the analysis directory consisting of the reference PD
 
 Usage: `python oligos-cmap.py <.pdb file> <.xtc file> <distance in nm>` 
 
-Output files: - oligomer-groups.dat        - `protein chains involved in aggregated state`
-              - oligomer-states.dat        - `Number of chains involved in aggregated state (quantitative value)`
-              -**oligo-highest-size.dat**  - `Highest Oligomer size (maximum = number of protein chains)`
-              -**contact-map.dat**         - `Average over the frequency of inter-residue contacts between protein chains`
+Output files: - oligomer-groups.dat        - `protein chains involved in aggregated state`\
+              - oligomer-states.dat        - `Number of chains involved in aggregated state (quantitative value)`\
+              -**oligo-highest-size.dat**  - `Highest Oligomer size (maximum = number of protein chains)`\
+              -**contact-map.dat**         - `Average over the frequency of inter-residue contacts between protein chains`\
               - oligo-block-average.dat    - `Moving average to smooth out fluctuations over simulation time dependent observables`
 
 # Plotting the Inter-residue Contact Map:
@@ -33,7 +33,7 @@ Output files: Oligomerisation-state.pdf   - Image file indicating evolution of a
   
 # Note: **<filename.dat>**  files are output files.
 -----------------------------------------------------# Examples #-----------------------------------------------------\
-Walkthrough the codes using the sample structure and trajectory files in example.zip
+Walkthrough the codes using the sample structure and trajectory files in example.zip\
 Usage:
 - python oligos-cmap.py protein_ref.pdb  protein_md.xtc 4
 - python plot-cmap.py protein_ref.pdb  protein_md.xtc contact-map.dat
