@@ -31,15 +31,12 @@ Usage: `python plot-oligostate.py <.pdb file> <.xtc file>  **oligo-highest-size.
 Output files: Oligomerisation-state.pdf   - Image file indicating evolution of aggregation kinetics over time
   
   
-# Note: **<filename.dat>**  files are output files.
+# Note: **<filename>.dat**  files are output files.
 -----------------------------------------------------# Examples #-----------------------------------------------------\
 Walkthrough the codes using the sample structure and trajectory files in example.zip\
 Usage:
 - python oligos-cmap.py protein_ref.pdb  protein_md.xtc 4
 - python plot-cmap.py protein_ref.pdb  protein_md.xtc contact-map.dat
 - python plot-oligostate.py protein_ref.pdb  protein_md.xtc oligo-highest-size.dat 1000
-
-            
-            
-            
-
+  
+  
