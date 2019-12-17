@@ -20,13 +20,13 @@ Output files:\
 
 # Plotting the Inter-residue Contact Map:
 
-Usage: `python plot-cmap.py <.pdb file> <.xtc file> **contact-map.dat**`
+Usage: `python plot-cmap.py <.pdb file> <.xtc file>` **contact-map.dat**
 
 Output files: Contact-map.pdf             - Image file indicating average frequency of contacts between residues
 
 # Plotting the Oligomerisation state:
 
-Usage: `python plot-oligostate.py <.pdb file> <.xtc file>  **oligo-highest-size.dat**  <simulation time in nanoseconds(ns)>`
+Usage: `python plot-oligostate.py <.pdb file> <.xtc file> ` **oligo-highest-size.dat**  `<simulation time in nanoseconds(ns)>`
 
 Output files: Oligomerisation-state.pdf   - Image file indicating evolution of aggregation kinetics over time
   
