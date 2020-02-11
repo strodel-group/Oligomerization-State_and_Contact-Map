@@ -10,7 +10,7 @@ Following dependencies need to be fulfilled to run the codes.
 The oligos-cmap.py code calculates the highest oligomer state formed by protein chains in the system within a specfic cutoff distance. It indicates the time (in the form of snaphots from simulation trajectory) at which dissociation or association of protein chains occurs and also identifies the protein chains involved in aggregated state.\
 Copy/Download the codes to the analysis directory consisting of the reference PDB structure (.pdb file, other formats can be tested), the molecular dynamics trajectory file only with protein atoms (.xtc file, other formats can be tested) and the Minimum distance in nano-metres(nm) to consider association or aggregation of proteins.
 
-Usage: `python oligos-cmap.py <.pdb file> <.xtc file> <distance in nm>`\
+Usage: `python oligos-cmap.py <.pdb file> <.xtc file> <distance in Angstrom>`\
 Output files:\
              -   oligomer-groups.dat       - `protein chains involved in aggregated state`\
              -   oligomer-states.dat       - `Number of chains involved in aggregated state (quantitative value)`\
