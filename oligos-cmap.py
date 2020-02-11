@@ -158,7 +158,7 @@ for n,t in enumerate(uni.trajectory[1:]):
                                 ContactMap[n3][n2] +=1 
 
 #print(count)
-Norm_ContactMap = np.true_divide(ContactMap,float(count))
+Norm_ContactMap = np.true_divide(ContactMap,float(count)*2.0)
 
 # Save contact map in a file
 
