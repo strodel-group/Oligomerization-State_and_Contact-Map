@@ -12,11 +12,11 @@ Copy/Download the codes to the analysis directory consisting of the reference PD
 
 Usage: `python2 oligos-cmap.py <.pdb file> <.xtc file> <distance in Angstrom>`\
 Output files:\
-             -   oligomer-groups.dat       - `Identifies the peptide chain part of the oligomer group`\
-             -   oligomer-states.dat       - `Counts the number of peptide chain in the oligomer group`\
-             - **oligo-highest-size.dat**  - `Highest oligomer size formed per frame of the whole trajectory (maximum size = total number of protein chains in simulation box)`\
-             - **contact-map.dat**         - `Average over the frequency of inter-residue contacts between protein chains`\
-             -   oligo-block-average.dat   - `Moving average to smooth out fluctuations over simulation time`
+             -   oligomer-groups.dat       - `groups the interacting protein chains.`\
+             -   oligomer-states.dat       - `counts the number of chains in each oligomer group.`\
+             - **oligo-highest-size.dat**  - `finds the maximum oligomer size formed per frame. (maximum size = total number of protein chains in simulation box)`\
+             - **contact-map.dat**         - `saves the frequency of contacts between residues from different proteins.`\
+             -   oligo-block-average.dat   - `creates a series of 25-frame moving average of  the maximum oligomer size.`
 
 # Plotting the Inter-residue Contact Map:
 
