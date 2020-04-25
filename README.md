@@ -12,8 +12,8 @@ Copy/Download the codes to the analysis directory consisting of the reference PD
 
 Usage: `python2 oligos-cmap.py <.pdb file> <.xtc file> <distance in Angstrom>`\
 Output files:\
-             -   oligomer-groups.dat       - `protein chains involved in aggregated state`\
-             -   oligomer-states.dat       - `Number of chains involved in aggregated state (quantitative value)`\
+             -   oligomer-groups.dat       - `Which peptide chain is part of the oligomer group`\
+             -   oligomer-states.dat       - `Counts the number of peptide chains in the oligomer group`\
              - **oligo-highest-size.dat**  - `Highest Oligomer size (maximum = number of protein chains)`\
              - **contact-map.dat**         - `Average over the frequency of inter-residue contacts between protein chains`\
              -   oligo-block-average.dat   - `Moving average to smooth out fluctuations over simulation time dependent observables`
