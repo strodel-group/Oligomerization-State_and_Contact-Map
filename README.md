@@ -16,7 +16,7 @@ Output files:\
              -   oligomer-states.dat       - `Counts the number of peptide chain in the oligomer group`\
              - **oligo-highest-size.dat**  - `Highest oligomer size formed per frame of the whole trajectory (maximum size = total number of protein chains in simulation box)`\
              - **contact-map.dat**         - `Average over the frequency of inter-residue contacts between protein chains`\
-             -   oligo-block-average.dat   - `Moving average to smooth out fluctuations over simulation time dependent observables`
+             -   oligo-block-average.dat   - `Moving average to smooth out fluctuations over simulation time`
 
 # Plotting the Inter-residue Contact Map:
 
