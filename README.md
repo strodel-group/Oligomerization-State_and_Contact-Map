@@ -1,5 +1,9 @@
-# Oligomerization-State_and_Contact-Map
+#OLIGAMIX is a lightweight and extensible analysis tool for tracking oligomerization states and inter-chain contact networks from molecular dynamics (MD) simulations.
 
+The name OLIGAMIX is a portmanteau of “oligomerization” and “dynamics”, reflecting its core goal of capturing the dynamic assembly and evolution of multimeric protein systems. Designed to capture the dynamic assembly of multimeric protein systems, OLIGAMIX computes time-resolved oligomerization sizes and generates residue–residue contact maps that quantify interface formation across trajectories. It is particularly suited for studying protein aggregation, self-assembly, and interface stability in systems such as amyloids, membrane complexes, or intrinsically disordered regions. The framework supports trajectory files in standard formats (.xtc, .dcd, .trr, etc.), uses user-defined cutoffs for defining contacts and clusters, and outputs both raw data and publication-ready plots. 
+
+OLIGAMIX was originally developed to support the comparative analysis of force-field-dependent aggregation pathways in the study:
+"Different Force Fields Give Rise to Different Amyloid Aggregation Pathways in Molecular Dynamics Simulations", J. Chem. Inf. Model. 2020, DOI: 10.1021/acs.jcim.0c01063
 
 Following dependencies need to be fulfilled to run the codes.
   - Python 2.7 or 3.6 (`From Anaconda distribution`)
